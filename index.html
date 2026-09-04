@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Course Home | Alan Helaman Hernández Serrato</title>
+  <meta
+    name="description"
+    content="WDD 231 course home page for Alan Helaman Hernández Serrato featuring a personal introduction, responsive navigation, and a filterable Web and Computer Programming certificate course list."
+  >
+  <meta name="author" content="Alan Helaman Hernández Serrato">
+
+  <link rel="icon" href="images/code-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a class="brand-mark" href="index.html" aria-label="WDD 231 course home">
+      <img src="images/code-logo.svg" alt="" width="64" height="64">
+    </a>
+    <span>Alan Hernández</span>
+    <button
+      id="menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav id="primary-navigation" aria-label="Primary navigation">
+    <a class="active" href="index.html" aria-current="page">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="final/index.html">Final</a>
+  </nav>
+
+  <main id="main-content">
+    <h1>Home</h1>
+
+    <div class="top-layout">
+      <section class="panel about-card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <div class="panel-content">
+          <p>
+            Hello! I am Alan Hernández, a Software Development student from Mexico. I enjoy
+            transforming ideas into practical digital experiences and finding clear solutions to
+            technical problems.
+          </p>
+          <p>
+            I have worked with HTML, CSS, JavaScript, Python, C#, SQL, networking, and server
+            administration. In WDD 231, I want to strengthen my knowledge of user experience,
+            accessibility, performance, and working with APIs.
+          </p>
+          <p>
+            Away from the screen, I enjoy technology, video games, and spending time with my
+            family. I believe the best projects combine useful code with thoughtful design.
+          </p>
+          <ul class="interest-list" aria-label="Areas of interest">
+            <li>Frontend Development</li>
+            <li>Automation</li>
+            <li>Accessible Design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel photo-card" aria-labelledby="photo-heading">
+        <h2 id="photo-heading">Student Photo</h2>
+        <div class="panel-content photo-content">
+          <img
+            src="images/alan-profile.svg"
+            alt="Illustrated profile card for Alan Hernández"
+            width="600"
+            height="720"
+          >
+          <p>Software Development Student</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel certificate-card" aria-labelledby="certificate-heading">
+      <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
+      <div class="panel-content">
+        <div class="course-filters" role="group" aria-label="Filter courses by subject">
+          <button class="active" type="button" data-filter="all" aria-pressed="true">All Courses</button>
+          <button type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+          <button type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+        </div>
+
+        <div id="course-list" class="course-grid" aria-live="polite"></div>
+
+        <p class="credit-total" aria-live="polite">
+          Total credits for the courses shown: <strong id="total-credits">0</strong>
+        </p>
+        <p class="course-legend"><span aria-hidden="true">✓</span> Completed course</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="" width="44" height="44">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="44" height="44">
+      </a>
+      <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" aria-label="CodePen profile">
+        <img src="images/codepen.svg" alt="" width="44" height="44">
+      </a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> · Alan Helaman Hernández Serrato · Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

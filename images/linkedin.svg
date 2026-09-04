@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
-  <circle cx="44" cy="44" r="40" fill="#0A66C2"/>
-  <path d="M25 35h10v30H25zm5-15a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm11 15h10v4c3-4 7-5 11-5 10 0 13 7 13 17v14H65V52c0-7-2-10-7-10-6 0-7 5-7 11v12H41z" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="linkedin-title">
+  <title id="linkedin-title">LinkedIn</title>
+  <circle cx="256" cy="256" r="248" fill="#0A66C2"/>
+  <path
+    fill="#FFFFFF"
+    d="M184.2 392h-57.5V206.9h57.5V392Zm-28.8-210.4a33.4 33.4 0 1 1 0-66.8 33.4 33.4 0 0 1 0 66.8ZM400 392h-57.4v-90.1c0-21.5-.4-49.1-29.9-49.1-30 0-34.6 23.4-34.6 47.6V392h-57.4V206.9h55.1v25.3h.8c7.7-14.5 26.4-29.9 54.4-29.9 58.1 0 69 38.3 69 88V392Z"
+  />
 </svg>

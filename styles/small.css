@@ -79,7 +79,8 @@ header {
   gap: 0.7rem;
   align-items: center;
   color: var(--surface);
-  background: linear-gradient(125deg, var(--navy-950), var(--navy-800));
+  background: var(--navy-800);
+  border-bottom: 4px solid var(--teal-700);
 }
 
 .brand-mark {
@@ -95,6 +96,8 @@ header {
 header > span {
   min-width: 0;
   overflow-wrap: anywhere;
+  color: var(--surface);
+  background-color: var(--navy-800);
   font-size: clamp(1.15rem, 6vw, 1.7rem);
   font-weight: 800;
   letter-spacing: 0.01em;
@@ -422,16 +425,26 @@ footer p {
   margin: 0.2rem 0;
 }
 
+#currentyear {
+  color: var(--surface);
+  background-color: var(--navy-950);
+}
+
 #lastModified {
   color: #ffd878;
   font-size: 0.9rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skip-link,
+  #menu-button span,
+  #primary-navigation a,
+  .course-filters button,
+  .social-links a {
+    transition: none;
   }
 }

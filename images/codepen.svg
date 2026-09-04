@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
-  <circle cx="44" cy="44" r="40" fill="#071D2B"/>
-  <path d="m44 18 25 17v18L44 70 19 53V35zm0 8v14l11-7zm-7 18L25 36v10zm-12 11 12-7 0 15zm19 7 11-8-11-7zm7-18 12 8V36zm-4 0 12 8-15 10-15-10 12-8z" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="codepen-title">
+  <title id="codepen-title">CodePen logo</title>
+  <circle cx="44" cy="44" r="42" fill="#000000"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 36 44 20 68 36v17L44 69 20 53Z"/>
+    <path d="m20 36 24 16 24-16M20 53l24-16 24 16M44 20v17M44 52v17"/>
+  </g>
 </svg>

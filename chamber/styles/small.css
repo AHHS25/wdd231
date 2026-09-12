@@ -475,10 +475,9 @@ footer a {
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+  .skip-link,
+  .menu-button span,
+  .social-links a {
+    transition: none;
   }
 }

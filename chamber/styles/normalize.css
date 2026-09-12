@@ -37,5 +37,5 @@ select {
 
 button,
 a {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: #00000000;
 }

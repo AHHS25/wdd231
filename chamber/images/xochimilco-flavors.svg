@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440">
+  <rect width="720" height="440" fill="#ffe8ed"/>
+  <path d="M0 310c95-45 176 42 270 0s176 42 270 0 144 9 180 20v110H0Z" fill="#16a4a0"/>
+  <path d="M218 236h284l-40 92H258Z" fill="#d64772"/>
+  <path d="M268 236V122h184v114" fill="#f3c451" stroke="#7d2546" stroke-width="8"/>
+  <path d="m286 205 38-46 36 46 36-46 39 46" fill="none" stroke="#7d2546" stroke-width="12"/>
+  <g fill="#fff"><circle cx="303" cy="139" r="13"/><circle cx="360" cy="139" r="13"/><circle cx="417" cy="139" r="13"/></g>
+  <text x="360" y="385" fill="#64203b" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">FLAVORS OF XOCHIMILCO</text>
+</svg>

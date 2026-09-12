@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440">
+  <rect width="720" height="440" fill="#f8e6c7"/>
+  <g transform="translate(360 195)">
+    <g fill="#c74b3d"><ellipse rx="38" ry="112" transform="rotate(0)"/><ellipse rx="38" ry="112" transform="rotate(60)"/><ellipse rx="38" ry="112" transform="rotate(120)"/></g>
+    <g fill="#156b62"><ellipse rx="23" ry="82" transform="rotate(30)"/><ellipse rx="23" ry="82" transform="rotate(90)"/><ellipse rx="23" ry="82" transform="rotate(150)"/></g>
+    <circle r="48" fill="#f3c451"/><circle r="22" fill="#12324a"/>
+  </g>
+  <path d="M70 56h110M540 56h110M70 334h110M540 334h110" stroke="#c74b3d" stroke-linecap="round" stroke-width="12"/>
+  <text x="360" y="390" fill="#572c28" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">COYOACÁN ARTISANS</text>
+</svg>

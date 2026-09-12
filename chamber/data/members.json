@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Café Alameda",
+    "address": "Av. Juárez 62, Centro, 06050 Mexico City",
+    "phone": "+52 55 5552 0101",
+    "website": "https://cafealameda.example/",
+    "image": "cafe-alameda.svg",
+    "membership": 3,
+    "category": "Food & Hospitality"
+  },
+  {
+    "name": "Reforma Tech Lab",
+    "address": "Paseo de la Reforma 333, Cuauhtémoc, 06500 Mexico City",
+    "phone": "+52 55 5552 0102",
+    "website": "https://reformatech.example/",
+    "image": "reforma-tech.svg",
+    "membership": 2,
+    "category": "Technology"
+  },
+  {
+    "name": "Coyoacán Artisans Collective",
+    "address": "Allende 38, Del Carmen, 04100 Mexico City",
+    "phone": "+52 55 5552 0103",
+    "website": "https://coyoacanartisans.example/",
+    "image": "coyoacan-artisans.svg",
+    "membership": 1,
+    "category": "Arts & Culture"
+  },
+  {
+    "name": "Chapultepec Creative Studio",
+    "address": "Av. Constituyentes 115, San Miguel Chapultepec, 11850 Mexico City",
+    "phone": "+52 55 5552 0104",
+    "website": "https://chapultepecstudio.example/",
+    "image": "chapultepec-studio.svg",
+    "membership": 3,
+    "category": "Design & Media"
+  },
+  {
+    "name": "Flavors of Xochimilco",
+    "address": "Nuevo León 24, Xochimilco, 16070 Mexico City",
+    "phone": "+52 55 5552 0105",
+    "website": "https://xochimilcoflavors.example/",
+    "image": "xochimilco-flavors.svg",
+    "membership": 2,
+    "category": "Food & Tourism"
+  },
+  {
+    "name": "Azteca Mobility",
+    "address": "Eje Central 410, Narvarte Poniente, 03020 Mexico City",
+    "phone": "+52 55 5552 0106",
+    "website": "https://aztecamobility.example/",
+    "image": "azteca-mobility.svg",
+    "membership": 1,
+    "category": "Transportation"
+  },
+  {
+    "name": "Roma Norte Books",
+    "address": "Álvaro Obregón 126, Roma Norte, 06700 Mexico City",
+    "phone": "+52 55 5552 0107",
+    "website": "https://romanortebooks.example/",
+    "image": "roma-books.svg",
+    "membership": 2,
+    "category": "Retail & Education"
+  },
+  {
+    "name": "Valle Verde Urban Gardens",
+    "address": "Providencia 812, Del Valle Centro, 03100 Mexico City",
+    "phone": "+52 55 5552 0108",
+    "website": "https://valleverde.example/",
+    "image": "valle-verde.svg",
+    "membership": 3,
+    "category": "Sustainability"
+  }
+]

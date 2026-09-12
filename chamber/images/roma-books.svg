@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440">
+  <rect width="720" height="440" fill="#f2dbe7"/>
+  <circle cx="360" cy="195" r="145" fill="#6a315f" opacity=".1"/>
+  <path d="M170 118c85-18 146-1 190 45v174c-44-46-105-63-190-45Zm380 0c-85-18-146-1-190 45v174c44-46 105-63 190-45Z" fill="#fff" stroke="#6a315f" stroke-linejoin="round" stroke-width="9"/>
+  <path d="M215 165h92m-92 38h105m-105 38h105m193-76h-92m92 38H400m105 38H400" stroke="#d67868" stroke-linecap="round" stroke-width="9"/>
+  <text x="360" y="390" fill="#57264f" font-family="Arial, sans-serif" font-size="35" font-weight="700" text-anchor="middle">ROMA NORTE BOOKS</text>
+</svg>

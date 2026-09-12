@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8eee2"/><stop offset="1" stop-color="#8cc4ab"/></linearGradient></defs>
+  <rect width="720" height="440" fill="url(#c)"/>
+  <circle cx="360" cy="190" r="122" fill="#fff" opacity=".9"/>
+  <path d="M360 85c-54 0-97 42-97 94 0 40 25 74 62 88l-21 51h112l-22-51c37-14 63-48 63-88 0-52-43-94-97-94Z" fill="#1c6048"/>
+  <path d="M360 116v176m-48-129 48 44 49-48m-83 83 34 31 36-32" fill="none" stroke="#d8eee2" stroke-linecap="round" stroke-width="10"/>
+  <text x="360" y="385" fill="#123b30" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">CHAPULTEPEC STUDIO</text>
+</svg>

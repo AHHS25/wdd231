@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Mexico City Chamber emblem</title>
+  <rect width="64" height="64" rx="14" fill="#fff"/>
+  <path d="M10 50h44v5H10zM15 44h34v6H15zM19 25h6v19h-6zm10 0h6v19h-6zm10 0h6v19h-6z" fill="#12324a"/>
+  <path d="M8 21 32 7l24 14v5H8z" fill="#f3c451"/>
+  <circle cx="32" cy="18" r="3.5" fill="#0f6b63"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440">
+  <defs><linearGradient id="b" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#0a2538"/><stop offset="1" stop-color="#146b75"/></linearGradient></defs>
+  <rect width="720" height="440" fill="url(#b)"/>
+  <g fill="none" stroke="#66e1d2" stroke-width="7" opacity=".65"><path d="M0 110h160l55 55h95"/><path d="M720 105H560l-60 60h-90"/><path d="M0 320h170l55-55h85"/><path d="M720 325H555l-60-60h-85"/></g>
+  <g fill="#f3c451"><circle cx="213" cy="165" r="10"/><circle cx="502" cy="165" r="10"/><circle cx="223" cy="265" r="10"/><circle cx="497" cy="265" r="10"/></g>
+  <rect x="275" y="115" width="170" height="190" rx="26" fill="#fff"/>
+  <text x="360" y="230" fill="#12324a" font-family="Arial, sans-serif" font-size="76" font-weight="800" text-anchor="middle">RT</text>
+  <text x="360" y="370" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">REFORMA TECH LAB</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081f31"/><stop offset="1" stop-color="#0f6b63"/></linearGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.5" fill="#fff" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect x="88" y="82" width="150" height="150" rx="32" fill="#fff"/>
+  <path d="M113 196h100v13H113zm12-16h76v16h-76zm11-43h15v43h-15zm26 0h15v43h-15zm26 0h15v43h-15z" fill="#12324a"/>
+  <path d="m108 128 55-33 55 33v12H108z" fill="#f3c451"/>
+  <text x="88" y="338" fill="#f3c451" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">MEXICO CITY</text>
+  <text x="88" y="412" fill="#fff" font-family="Georgia, serif" font-size="69" font-weight="700">Chamber of Commerce</text>
+  <text x="88" y="477" fill="#dce9ee" font-family="Arial, sans-serif" font-size="34">Business Member Directory</text>
+  <path d="M88 525h454" stroke="#f3c451" stroke-width="8"/>
+  <g transform="translate(830 315)" fill="none" stroke="#fff" opacity=".18" stroke-width="28"><circle r="210"/><circle r="137"/><circle r="64"/></g>
+</svg>

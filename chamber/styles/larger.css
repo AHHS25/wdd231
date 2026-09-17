@@ -47,6 +47,29 @@
     padding-block: 3rem 5rem;
   }
 
+  .home-main {
+    padding-top: 1.5rem;
+  }
+
+  .hero,
+  .hero-image {
+    min-height: 31rem;
+  }
+
+  .hero-image {
+    height: 31rem;
+  }
+
+  .home-overview {
+    grid-template-columns: minmax(0, 1.12fr) minmax(19rem, 0.88fr);
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+
+  .home-panel {
+    padding: 1.3rem;
+  }
+
   .page-intro {
     margin-bottom: 2.4rem;
   }
@@ -119,6 +142,10 @@
 }
 
 @media only screen and (min-width: 68rem) {
+  .hero-content {
+    padding: 4rem;
+  }
+
   .members.grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

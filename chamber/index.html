@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with Mexico City businesses, chamber events, local weather, and opportunities to help your organization grow.">
+  <meta name="author" content="Alan Helaman Hernandez Serrato">
+
+  <meta property="og:title" content="Mexico City Chamber of Commerce | Business Home">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Build local connections, discover upcoming events, and meet leading members of the Mexico City business community.">
+  <meta property="og:image" content="https://ahhs25.github.io/wdd231/chamber/images/home-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Illustrated Mexico City skyline for the Chamber of Commerce">
+  <meta property="og:url" content="https://ahhs25.github.io/wdd231/chamber/index.html">
+
+  <meta name="theme-color" content="#12324a">
+  <link rel="canonical" href="https://ahhs25.github.io/wdd231/chamber/index.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/home.js" defer></script>
+  <title>Home | Mexico City Chamber of Commerce</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html" aria-label="Mexico City Chamber of Commerce home">
+        <img src="images/chamber-logo.svg" alt="" width="64" height="64">
+        <span class="brand-text">
+          <strong>Mexico City</strong>
+          <span>Chamber of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul id="primary-navigation" class="navigation">
+          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="home-main">
+    <section class="hero" aria-labelledby="home-title">
+      <img class="hero-image" src="images/mexico-city-hero.svg" alt="Illustrated skyline of Mexico City at sunrise" width="1600" height="700" fetchpriority="high">
+      <div class="hero-content">
+        <p class="hero-kicker">Grow with Mexico City</p>
+        <h1 id="home-title">Mexico City Chamber of Commerce</h1>
+        <p class="hero-summary">Join a community that champions local businesses, creates meaningful partnerships, and strengthens our city.</p>
+        <a class="hero-cta" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-overview">
+      <section class="home-panel member-card" aria-labelledby="events-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Connect and learn</p>
+            <h2 id="events-title">Upcoming Events</h2>
+          </div>
+        </div>
+
+        <div class="event-list">
+          <article class="event-item">
+            <time class="event-date" datetime="2026-09-24">
+              <strong>24</strong>
+              <span>Sep</span>
+            </time>
+            <div class="event-details">
+              <h3>Member Networking Breakfast</h3>
+              <p>8:30 a.m. · Reforma Business Center</p>
+              <p>Meet fellow members and exchange ideas over breakfast.</p>
+            </div>
+          </article>
+
+          <article class="event-item">
+            <time class="event-date" datetime="2026-10-03">
+              <strong>03</strong>
+              <span>Oct</span>
+            </time>
+            <div class="event-details">
+              <h3>Small Business Digital Workshop</h3>
+              <p>5:00 p.m. · Chamber Training Room</p>
+              <p>Practical tools to strengthen your online presence.</p>
+            </div>
+          </article>
+
+          <article class="event-item">
+            <time class="event-date" datetime="2026-10-15">
+              <strong>15</strong>
+              <span>Oct</span>
+            </time>
+            <div class="event-details">
+              <h3>Mexico City Innovation Forum</h3>
+              <p>10:00 a.m. · Chapultepec Conference Hall</p>
+              <p>Local leaders share ideas for responsible business growth.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-panel member-card weather-panel" aria-labelledby="weather-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Plan your day</p>
+            <h2 id="weather-title">Local Weather</h2>
+          </div>
+          <p class="weather-location">Mexico City</p>
+        </div>
+
+        <p id="weather-status" class="weather-status" role="status">Loading current weather…</p>
+
+        <div id="current-weather" class="weather-current" hidden>
+          <div>
+            <p class="weather-label">Current</p>
+            <p id="weather-description" class="weather-description"></p>
+          </div>
+          <p class="weather-temperature"><span id="current-temperature"></span>°C</p>
+        </div>
+
+        <h3 id="forecast-title" class="forecast-title" hidden>Three-Day Forecast</h3>
+        <div id="forecast" class="forecast-grid" aria-labelledby="forecast-title" hidden></div>
+      </section>
+    </div>
+
+    <section class="spotlights-section" aria-labelledby="spotlights-title">
+      <div class="spotlight-heading">
+        <div>
+          <p class="eyebrow">Meet our community</p>
+          <h2 id="spotlights-title">Member Spotlights</h2>
+        </div>
+        <p>Featured Silver and Gold members supporting Mexico City's growth.</p>
+      </div>
+
+      <p id="spotlight-status" class="directory-status" role="status">Loading featured members…</p>
+      <div id="spotlights" class="members grid spotlight-grid"></div>
+    </section>
+
+    <noscript>
+      <p class="error-message">JavaScript is required to display live weather and member spotlights.</p>
+    </noscript>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p class="footer-heading">Mexico City Chamber of Commerce</p>
+        <address>
+          Av. Paseo de la Reforma 250<br>
+          Cuauhtémoc, 06600 Mexico City, CDMX<br>
+          <a href="mailto:info@cdmxchamber.example">info@cdmxchamber.example</a><br>
+          <a href="tel:+525555552310">+52 55 5555 2310</a>
+        </address>
+      </div>
+
+      <nav class="social-links" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on Facebook">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M14 8h3V4.2c-.5-.1-2.2-.2-4.1-.2C9 4 6.3 6.4 6.3 10.8V14H2v4.3h4.3V24h5.2v-5.7h4.2l.7-4.3h-4.9v-2.8C11.5 9.9 11.9 8 14 8Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on LinkedIn">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M5.3 7.7A2.7 2.7 0 1 0 5.3 2a2.7 2.7 0 0 0 0 5.7ZM3 21.8h4.6V9.2H3v12.6ZM10.2 9.2v12.6h4.6v-6.2c0-1.7.3-3.3 2.5-3.3 2.1 0 2.2 2 2.2 3.4v6.1H24V15c0-4.4-.9-7.7-6-7.7-2.4 0-4 1.3-4.7 2.5h-.1v-2h-4.4Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on Instagram">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.6.2 2.1.4a4.3 4.3 0 0 1 1.6 1c.5.5.8 1 1 1.6.2.5.4 1.2.4 2.1.1 1 .1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.6-.4 2.1a4.3 4.3 0 0 1-1 1.6c-.5.5-1 .8-1.6 1-.5.2-1.2.4-2.1.4-1 .1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.6-.2-2.1-.4a4.3 4.3 0 0 1-1.6-1c-.5-.5-.8-1-1-1.6-.2-.5-.4-1.2-.4-2.1C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.6.4-2.1a4.3 4.3 0 0 1 1-1.6c.5-.5 1-.8 1.6-1 .5-.2 1.2-.4 2.1-.4C9 2 9.3 2 12 2Zm0 1.8c-2.6 0-2.9 0-4 .1-.8 0-1.3.2-1.6.3-.4.2-.8.4-1.1.7-.3.3-.5.7-.7 1.1-.1.3-.3.8-.3 1.6-.1 1-.1 1.4-.1 4s0 2.9.1 4c0 .8.2 1.3.3 1.6.2.4.4.8.7 1.1.3.3.7.5 1.1.7.3.1.8.3 1.6.3 1 .1 1.4.1 4 .1s2.9 0 4-.1c.8 0 1.3-.2 1.6-.3.4-.2.8-.4 1.1-.7.3-.3.5-.7.7-1.1.1-.3.3-.8.3-1.6.1-1 .1-1.4.1-4s0-2.9-.1-4c0-.8-.2-1.3-.3-1.6a2.5 2.5 0 0 0-.7-1.1 2.5 2.5 0 0 0-1.1-.7c-.3-.1-.8-.3-1.6-.3-1-.1-1.4-.1-4-.1Zm0 4a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4Zm0 6.6a2.4 2.4 0 1 0 0-4.8 2.4 2.4 0 0 0 0 4.8Zm5.6-7.6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="footer-development">
+        <p>WDD 231 Class Project</p>
+        <p>Alan Helaman Hernandez Serrato</p>
+        <p>© <span id="currentyear"></span> Mexico City Chamber</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

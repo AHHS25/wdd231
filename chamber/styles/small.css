@@ -249,7 +249,7 @@ h1 {
 .view-button.active {
   color: #ffffff;
   background: #0f6b63;
-  border-color: #0f6b63;
+  border-color: #0b514b;
 }
 
 .view-button.active svg {
@@ -526,7 +526,7 @@ footer a {
 
 .hero-cta:hover {
   background: #ffffff;
-  border-color: #ffffff;
+  border-color: #f3c451;
 }
 
 .home-overview {
@@ -664,6 +664,12 @@ footer a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.45rem;
+}
+
+.weather-current[hidden],
+.forecast-title[hidden],
+.forecast-grid[hidden] {
+  display: none;
 }
 
 .forecast-day {

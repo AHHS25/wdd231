@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to join the Mexico City Chamber of Commerce and choose the membership level that best supports your organization.">
+  <meta name="author" content="Alan Helaman Hernandez Serrato">
+
+  <meta property="og:title" content="Join the Mexico City Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Grow your organization through local connections, training, events, and promotional opportunities in Mexico City.">
+  <meta property="og:image" content="https://ahhs25.github.io/wdd231/chamber/images/home-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Illustrated Mexico City skyline for the Chamber of Commerce">
+  <meta property="og:url" content="https://ahhs25.github.io/wdd231/chamber/join.html">
+
+  <meta name="theme-color" content="#12324a">
+  <link rel="canonical" href="https://ahhs25.github.io/wdd231/chamber/join.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/join.js" defer></script>
+  <title>Join | Mexico City Chamber of Commerce</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html" aria-label="Mexico City Chamber of Commerce home">
+        <img src="images/chamber-logo.svg" alt="" width="64" height="64">
+        <span class="brand-text">
+          <strong>Mexico City</strong>
+          <span>Chamber of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul id="primary-navigation" class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a class="active" href="join.html" aria-current="page">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="join-main">
+    <section class="page-intro" aria-labelledby="join-title">
+      <p class="eyebrow">Build stronger connections</p>
+      <h1 id="join-title">Join the Mexico City Chamber of Commerce</h1>
+      <p>Tell us about your organization and select a membership designed to support your next stage of growth.</p>
+    </section>
+
+    <div class="join-layout">
+      <section class="application-panel" aria-labelledby="application-title">
+        <div class="section-heading">
+          <p class="eyebrow">Membership application</p>
+          <h2 id="application-title">Applicant Information</h2>
+          <p id="required-note" class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+        </div>
+
+        <form class="membership-form" method="get" action="thankyou.html" aria-describedby="required-note">
+          <div class="form-row">
+            <label class="form-label">
+              First name <span class="required-marker" aria-hidden="true">*</span>
+              <input type="text" id="first" name="first" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label class="form-label">
+              Last name <span class="required-marker" aria-hidden="true">*</span>
+              <input type="text" id="last" name="last" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+          </div>
+
+          <label class="form-label">
+            Organizational title
+            <input type="text" id="organization-title" name="title" title="Enter at least seven letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]{7,}" minlength="7" aria-describedby="title-help">
+            <small id="title-help">At least 7 characters; letters, spaces, and hyphens only.</small>
+          </label>
+
+          <div class="form-row">
+            <label class="form-label">
+              Email address <span class="required-marker" aria-hidden="true">*</span>
+              <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="name@example.com" required>
+            </label>
+
+            <label class="form-label">
+              Mobile phone <span class="required-marker" aria-hidden="true">*</span>
+              <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+          </div>
+
+          <label class="form-label">
+            Business or organization name <span class="required-marker" aria-hidden="true">*</span>
+            <input type="text" id="organization" name="organization" title="Enter the name of your business or organization" autocomplete="organization" required>
+          </label>
+
+          <label class="form-label">
+            Membership level <span class="required-marker" aria-hidden="true">*</span>
+            <select id="membership" name="membership" title="Select a membership level" autocomplete="off" required>
+              <option value="" selected disabled>Choose a membership level</option>
+              <option value="np">NP Membership — No fee</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label class="form-label">
+            Business or organization description
+            <textarea id="description" name="description" title="Describe your business or organization" autocomplete="off" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+          <input class="form-submit" type="submit" title="Submit your membership application" value="Submit Membership Application">
+        </form>
+      </section>
+
+      <section class="membership-options" aria-labelledby="membership-options-title">
+        <div class="section-heading">
+          <p class="eyebrow">Choose your level</p>
+          <h2 id="membership-options-title">Membership Options</h2>
+          <p>Compare benefits before selecting a level in the application.</p>
+        </div>
+
+        <div class="membership-cards">
+          <article class="membership-level-card level-np">
+            <p class="level-label">Community</p>
+            <h3>NP Membership</h3>
+            <p class="membership-cost">No annual fee</p>
+            <a class="membership-details" href="#np-modal" data-dialog="np-modal" aria-haspopup="dialog">View benefits</a>
+          </article>
+
+          <article class="membership-level-card level-bronze">
+            <p class="level-label">Essential</p>
+            <h3>Bronze Membership</h3>
+            <p class="membership-cost">MX$1,500 per year</p>
+            <a class="membership-details" href="#bronze-modal" data-dialog="bronze-modal" aria-haspopup="dialog">View benefits</a>
+          </article>
+
+          <article class="membership-level-card level-silver">
+            <p class="level-label">Growth</p>
+            <h3>Silver Membership</h3>
+            <p class="membership-cost">MX$3,000 per year</p>
+            <a class="membership-details" href="#silver-modal" data-dialog="silver-modal" aria-haspopup="dialog">View benefits</a>
+          </article>
+
+          <article class="membership-level-card level-gold">
+            <p class="level-label">Leadership</p>
+            <h3>Gold Membership</h3>
+            <p class="membership-cost">MX$5,000 per year</p>
+            <a class="membership-details" href="#gold-modal" data-dialog="gold-modal" aria-haspopup="dialog">View benefits</a>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-modal" class="membership-modal" aria-labelledby="np-modal-title">
+      <div class="modal-heading">
+        <h2 id="np-modal-title">NP Membership Benefits</h2>
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close NP Membership benefits">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-price">No annual fee for qualifying nonprofit organizations.</p>
+        <ul class="modal-benefits">
+          <li>Standard listing in the chamber directory</li>
+          <li>Monthly member newsletter</li>
+          <li>Invitations to nonprofit networking sessions</li>
+          <li>Access to selected community workshops</li>
+        </ul>
+        <button class="modal-action" type="button" data-close-dialog>Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="bronze-modal" class="membership-modal" aria-labelledby="bronze-modal-title">
+      <div class="modal-heading">
+        <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close Bronze Membership benefits">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-price">MX$1,500 per year</p>
+        <ul class="modal-benefits">
+          <li>All NP Membership benefits</li>
+          <li>Admission to monthly networking events</li>
+          <li>Member pricing on chamber training</li>
+          <li>Access to business resource guides</li>
+        </ul>
+        <button class="modal-action" type="button" data-close-dialog>Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="silver-modal" class="membership-modal" aria-labelledby="silver-modal-title">
+      <div class="modal-heading">
+        <h2 id="silver-modal-title">Silver Membership Benefits</h2>
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close Silver Membership benefits">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-price">MX$3,000 per year</p>
+        <ul class="modal-benefits">
+          <li>All Bronze Membership benefits</li>
+          <li>Enhanced chamber directory listing</li>
+          <li>Two complimentary training registrations</li>
+          <li>Eligibility for home-page member spotlights</li>
+          <li>Discounted event sponsorship opportunities</li>
+        </ul>
+        <button class="modal-action" type="button" data-close-dialog>Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="gold-modal" class="membership-modal" aria-labelledby="gold-modal-title">
+      <div class="modal-heading">
+        <h2 id="gold-modal-title">Gold Membership Benefits</h2>
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close Gold Membership benefits">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-price">MX$5,000 per year</p>
+        <ul class="modal-benefits">
+          <li>All Silver Membership benefits</li>
+          <li>Priority home-page spotlight placement</li>
+          <li>Four complimentary training registrations</li>
+          <li>VIP invitations to leadership roundtables</li>
+          <li>Recognition at major chamber events</li>
+        </ul>
+        <button class="modal-action" type="button" data-close-dialog>Close</button>
+      </div>
+    </dialog>
+
+    <noscript>
+      <p class="error-message">JavaScript is required to open membership details and record the application timestamp.</p>
+    </noscript>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p class="footer-heading">Mexico City Chamber of Commerce</p>
+        <address>
+          Av. Paseo de la Reforma 250<br>
+          Cuauhtémoc, 06600 Mexico City, CDMX<br>
+          <a href="mailto:info@cdmxchamber.example">info@cdmxchamber.example</a><br>
+          <a href="tel:+525555552310">+52 55 5555 2310</a>
+        </address>
+      </div>
+
+      <nav class="social-links" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on Facebook">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M14 8h3V4.2c-.5-.1-2.2-.2-4.1-.2C9 4 6.3 6.4 6.3 10.8V14H2v4.3h4.3V24h5.2v-5.7h4.2l.7-4.3h-4.9v-2.8C11.5 9.9 11.9 8 14 8Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on LinkedIn">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M5.3 7.7A2.7 2.7 0 1 0 5.3 2a2.7 2.7 0 0 0 0 5.7ZM3 21.8h4.6V9.2H3v12.6ZM10.2 9.2v12.6h4.6v-6.2c0-1.7.3-3.3 2.5-3.3 2.1 0 2.2 2 2.2 3.4v6.1H24V15c0-4.4-.9-7.7-6-7.7-2.4 0-4 1.3-4.7 2.5h-.1v-2h-4.4Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Mexico City Chamber on Instagram">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.6.2 2.1.4a4.3 4.3 0 0 1 1.6 1c.5.5.8 1 1 1.6.2.5.4 1.2.4 2.1.1 1 .1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.6-.4 2.1a4.3 4.3 0 0 1-1 1.6c-.5.5-1 .8-1.6 1-.5.2-1.2.4-2.1.4-1 .1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.6-.2-2.1-.4a4.3 4.3 0 0 1-1.6-1c-.5-.5-.8-1-1-1.6-.2-.5-.4-1.2-.4-2.1C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.6.4-2.1a4.3 4.3 0 0 1 1-1.6c.5-.5 1-.8 1.6-1 .5-.2 1.2-.4 2.1-.4C9 2 9.3 2 12 2Zm0 1.8c-2.6 0-2.9 0-4 .1-.8 0-1.3.2-1.6.3-.4.2-.8.4-1.1.7-.3.3-.5.7-.7 1.1-.1.3-.3.8-.3 1.6-.1 1-.1 1.4-.1 4s0 2.9.1 4c0 .8.2 1.3.3 1.6.2.4.4.8.7 1.1.3.3.7.5 1.1.7.3.1.8.3 1.6.3 1 .1 1.4.1 4 .1s2.9 0 4-.1c.8 0 1.3-.2 1.6-.3.4-.2.8-.4 1.1-.7.3-.3.5-.7.7-1.1.1-.3.3-.8.3-1.6.1-1 .1-1.4.1-4s0-2.9-.1-4c0-.8-.2-1.3-.3-1.6a2.5 2.5 0 0 0-.7-1.1 2.5 2.5 0 0 0-1.1-.7c-.3-.1-.8-.3-1.6-.3-1-.1-1.4-.1-4-.1Zm0 4a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4Zm0 6.6a2.4 2.4 0 1 0 0-4.8 2.4 2.4 0 0 0 0 4.8Zm5.6-7.6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="footer-development">
+        <p>WDD 231 Class Project</p>
+        <p>Alan Helaman Hernandez Serrato</p>
+        <p>© <span id="currentyear"></span> Mexico City Chamber</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for Pokémon Team Guide: purpose, visitor scenarios, colors, typography, and mobile and desktop home page wireframes.">
+  <meta name="author" content="Alan Helaman Hernández Serrato">
+  <meta name="theme-color" content="#16324f">
+  <meta property="og:title" content="Pokémon Team Guide | Website Site Plan">
+  <meta property="og:description" content="A plan for a responsive Pokémon explorer and team guide, with branding, page features, and home page wireframes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <title>Pokémon Team Guide | Website Site Plan</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiNmZmY4ZWYiIHN0cm9rZT0iIzE2MzI0ZiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTMgMzBhMjkgMjkgMCAwIDEgNTggMFoiIGZpbGw9IiNiNDIzMmIiLz48cGF0aCBkPSJNMyAzMmg1OCIgc3Ryb2tlPSIjMTYzMjRmIiBzdHJva2Utd2lkdGg9IjUiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI5IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMxNjMyNGYiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==">
+  <style>
+    :root {
+      --navy: #16324f;
+      --red: #b4232b;
+      --cream: #fff8ef;
+      --white: #ffffff;
+      --heading-font: Georgia, serif;
+      --body-font: Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1rem; }
+    body { margin: 0; background: var(--cream); color: var(--navy); font-family: var(--body-font); font-size: 1rem; line-height: 1.65; }
+    a { color: var(--red); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: .16em; }
+    :focus-visible { outline: 3px solid var(--red); outline-offset: 5px; }
+    h1, h2, h3 { font-family: var(--heading-font); line-height: 1.18; }
+    h1 { margin: .7rem 0 1.1rem; font-size: clamp(2.5rem, 7vw, 4.8rem); max-width: 20ch; }
+    h2 { margin: 0 0 1.2rem; font-size: clamp(1.75rem, 3.3vw, 2.35rem); }
+    h3 { margin: 1.6rem 0 .75rem; font-size: 1.4rem; }
+    p { margin: 0 0 1rem; }
+    ul, ol { padding-left: 1.4rem; }
+    li + li { margin-top: .55rem; }
+    code { font-family: var(--body-font); font-size: .95em; font-weight: 700; overflow-wrap: anywhere; }
+    .wrap { width: min(1100px, calc(100% - 3rem)); margin-inline: auto; }
+    .skip-link { position: absolute; left: 1rem; top: -10rem; padding: .7rem 1rem; background: var(--white); color: var(--navy); z-index: 2; }
+    .skip-link:focus { top: 1rem; }
+    .site-header { background: var(--navy); color: var(--white); padding: 2.5rem 0 3.25rem; }
+    .brand { display: flex; align-items: center; gap: .8rem; margin-bottom: 2.2rem; font-weight: 700; }
+    .brand-mark { width: 42px; height: 42px; border: 3px solid var(--white); border-radius: 50%; background: linear-gradient(var(--red) 0 45%, var(--navy) 45% 55%, var(--cream) 55%); position: relative; flex: 0 0 auto; }
+    .brand-mark::after { content: ""; width: 12px; height: 12px; border: 3px solid var(--navy); border-radius: 50%; background: var(--white); position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+    .eyebrow { margin-bottom: .6rem; font-weight: 700; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; }
+    .header-summary { max-width: 62ch; font-size: 1.15rem; margin-bottom: 1.5rem; }
+    .author { margin: 0; font-size: .95rem; }
+    .author strong { display: inline-block; margin-right: .5rem; }
+    .section-nav { background: var(--white); border-bottom: 2px solid var(--navy); }
+    .section-nav ul { margin: 0 auto; padding: 0; list-style: none; display: flex; flex-wrap: wrap; }
+    .section-nav li { margin: 0; }
+    .section-nav a { display: block; padding: 1rem 1.1rem; color: var(--navy); font-weight: 700; text-decoration: none; }
+    .section-nav a:hover { background: var(--cream); text-decoration: underline; }
+    main { padding-block: 2.6rem 3.8rem; }
+    section { padding: clamp(1.25rem, 4vw, 2.5rem); margin-bottom: 1.5rem; border: 1px solid var(--navy); border-radius: .65rem; background: var(--white); }
+    section:last-child { margin-bottom: 0; }
+    .section-number { display: inline-block; color: var(--red); font-family: var(--body-font); font-size: .75rem; font-weight: 700; letter-spacing: .14em; margin-bottom: .65rem; text-transform: uppercase; }
+    .intro-name { font-family: var(--heading-font); font-size: 1.65rem; color: var(--red); font-weight: 700; }
+    .callout { border-left: 4px solid var(--red); background: var(--cream); padding: 1rem 1.2rem; margin: 1.5rem 0 0; }
+    .callout p:last-child { margin-bottom: 0; }
+    .page-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-block: 1.5rem; }
+    .page-card { background: var(--cream); border-top: 4px solid var(--red); padding: 1.2rem; }
+    .page-card h3 { margin: .1rem 0 .6rem; }
+    .page-card p:last-child { margin-bottom: 0; }
+    .scenario-list { padding: 0; list-style: none; counter-reset: scenario; margin: 1.4rem 0 0; }
+    .scenario-list li { counter-increment: scenario; display: grid; grid-template-columns: 2.4rem 1fr; column-gap: .8rem; padding-block: .9rem; border-top: 1px solid var(--navy); margin: 0; }
+    .scenario-list li::before { content: counter(scenario, decimal-leading-zero); color: var(--red); font-weight: 700; font-size: 1.05rem; }
+    .scenario-list strong { display: block; margin-bottom: .3rem; }
+    .scenario-list p { margin: 0; }
+    table { width: 100%; border-collapse: collapse; margin-block: 1.1rem; font-size: .95rem; table-layout: fixed; }
+    caption { text-align: left; font-weight: 700; margin-bottom: .6rem; }
+    th, td { padding: .9rem .75rem; border: 1px solid var(--navy); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+    thead { background: var(--navy); color: var(--white); }
+    tbody tr:nth-child(even) { background: var(--cream); }
+    .feature-table th:first-child { width: 25%; }
+    .palette-table th:first-child { width: 25%; }
+    .palette-table th:nth-child(2) { width: 20%; }
+    .palette-table code { white-space: nowrap; }
+    .swatch { display: block; width: 3rem; height: 1.8rem; margin-bottom: .5rem; border: 1px solid var(--navy); border-radius: .2rem; }
+    .swatch-navy { background: var(--navy); }
+    .swatch-red { background: var(--red); }
+    .swatch-cream { background: var(--cream); }
+    .swatch-white { background: var(--white); }
+    .contrast-note { margin-bottom: 0; }
+    .type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+    .type-sample { background: var(--cream); border: 1px solid var(--navy); padding: 1.4rem; }
+    .type-sample h3 { margin-top: 0; }
+    .font-name { font-family: var(--body-font); color: var(--red); font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
+    .heading-sample { font-family: var(--heading-font); font-size: 2rem; font-weight: 700; }
+    .body-sample { font-family: var(--body-font); font-size: 1.05rem; }
+    figure { margin: 1.5rem 0 0; background: var(--cream); border: 1px solid var(--navy); padding: 1rem; }
+    figure img { display: block; max-width: 100%; height: auto; margin-inline: auto; border: 1px solid var(--navy); background: var(--white); }
+    .mobile-sketch img { width: min(100%, 420px); }
+    figcaption { margin-top: .9rem; font-size: .95rem; }
+    .reference-list { margin-bottom: 0; }
+    .site-footer { background: var(--navy); color: var(--white); padding-block: 1.8rem; }
+    .site-footer p { margin: 0; }
+    .site-footer p + p { margin-top: .4rem; font-size: .9rem; }
+    .site-footer a { color: var(--white); }
+
+    @media (max-width: 720px) {
+      .wrap { width: calc(100% - 2rem); }
+      .site-header { padding-block: 1.75rem 2.25rem; }
+      .brand { margin-bottom: 1.7rem; }
+      .section-nav ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .section-nav a { padding: .8rem .25rem; text-align: center; font-size: .87rem; }
+      main { padding-top: 1.5rem; }
+      section { padding: 1rem; }
+      .page-grid, .type-grid { grid-template-columns: 1fr; }
+      table { font-size: .85rem; }
+      th, td { padding: .7rem .4rem; }
+      .feature-table th:first-child { width: 33%; }
+      .palette-table th:first-child { width: 26%; }
+      .palette-table th:nth-child(2) { width: 34%; }
+      .palette-table td:nth-child(2) { padding-inline: .3rem; }
+      figure { padding: .65rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Pokémon Team Guide</span></div>
+      <p class="eyebrow">WDD 231 · Individual Project Site Plan</p>
+      <h1>Discover Pokémon.<br>Plan your team.</h1>
+      <p class="header-summary">A website plan for an approachable Pokémon explorer and a practical guide to building balanced teams.</p>
+      <p class="author"><strong>Alan Helaman Hernández Serrato</strong> · Web Frontend Development</p>
+    </div>
+  </header>
+
+  <nav class="section-nav" aria-label="Site plan sections">
+    <ul class="wrap">
+      <li><a href="#site-name">Site Name</a></li>
+      <li><a href="#site-purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#color-scheme">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" class="wrap" tabindex="-1">
+    <section id="site-name" aria-labelledby="name-heading">
+      <span class="section-number">01 · Identity</span>
+      <h2 id="name-heading">Site Name</h2>
+      <p class="intro-name">Pokémon Team Guide</p>
+      <p>I selected this name because it immediately identifies both the topic and the site's main benefit: helping visitors learn about Pokémon and plan a team. “Team Guide” communicates an educational, beginner-friendly approach rather than a collection of unrelated facts.</p>
+      <p>The visual identity will use a simple circular emblem inspired by the idea of collecting Pokémon, with the same navy and red colors used throughout the site.</p>
+      <div class="callout"><p><strong>Project location:</strong> The final website will be developed in the <code>final</code> subfolder of my <code>wdd231</code> repository and published through GitHub Pages.</p></div>
+    </section>
+
+    <section id="site-purpose" aria-labelledby="purpose-heading">
+      <span class="section-number">02 · Content &amp; scope</span>
+      <h2 id="purpose-heading">Site Purpose</h2>
+      <p>Pokémon Team Guide will help Pokémon fans discover Pokémon, understand their types and base statistics, and organize ideas for a balanced team. Visitors will be able to explore a searchable catalog, view detailed information, save favorites, and read simple team-building advice.</p>
+      <p><strong>Target audience:</strong> New and casual Pokémon players who want clear information and practical team ideas, as well as fans who enjoy comparing their favorite Pokémon. The website's content and navigation will be in English.</p>
+
+      <h3>Three Main Pages</h3>
+      <div class="page-grid">
+        <article class="page-card">
+          <h3>Home</h3>
+          <p><code>index.html</code></p>
+          <p>An introduction, links to the explorer and team guide, featured Pokémon, and quick tips that explain type variety and team roles.</p>
+        </article>
+        <article class="page-card">
+          <h3>Pokémon Explorer</h3>
+          <p><code>explorer.html</code></p>
+          <p>A catalog with name search, type filters, base statistics, favorite controls, and a details dialog for each Pokémon.</p>
+        </article>
+        <article class="page-card">
+          <h3>Team Guide</h3>
+          <p><code>teams.html</code></p>
+          <p>Team examples, explanations of useful roles, saved favorites, and a form for submitting a visitor's team idea.</p>
+        </article>
+      </div>
+
+      <h3>Planned Features</h3>
+      <table class="feature-table">
+        <caption>How the final website will support its purpose</caption>
+        <thead><tr><th scope="col">Feature</th><th scope="col">Planned Implementation</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Pokémon catalog</th><td>Load a curated local JSON file with the Fetch API and <code>async/await</code>. Render at least 15 Pokémon, each with a name, Pokédex number, type or types, HP, Attack, and Speed. Include a helpful error message with <code>try...catch</code>.</td></tr>
+          <tr><th scope="row">Search and filters</th><td>Respond to text input and type selection. Use array methods such as <code>filter()</code> and <code>map()</code>, template literals, and DOM updates to display matching entries and a result count.</td></tr>
+          <tr><th scope="row">Details and favorites</th><td>Use an accessible <code>dialog</code> for additional statistics and team-role notes. Save selected Pokémon in <code>localStorage</code> so visitors can return to their favorites.</td></tr>
+          <tr><th scope="row">Team idea form</th><td>Provide labeled fields for a visitor's name, email, team name, experience level, and preferred Pokémon. Submit the data to <code>thankyou.html</code>, which will display the submitted values. This confirmation page supports the three main pages.</td></tr>
+          <tr><th scope="row">Structure and credits</th><td>Organize JavaScript with ES modules. Use consistent navigation, a favicon, meaningful metadata, and a footer with author information, an attributions page, and the final demonstration video link.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Data and images:</strong> The curated dataset will be based on PokéAPI information, with Pokémon artwork and external content credited on an attributions page. Images will be optimized, given descriptive alternative text, and loaded lazily when below the initial viewport.</p>
+      <p><strong>Scope:</strong> Team advice will explain type variety and general roles. Recommendations will identify their game context when applicable, since available Pokémon and battle rules can differ between games.</p>
+    </section>
+
+    <section id="scenarios" aria-labelledby="scenarios-heading">
+      <span class="section-number">03 · Visitor questions</span>
+      <h2 id="scenarios-heading">Scenarios</h2>
+      <p>These questions represent the needs of the target audience and will guide the website's content and features.</p>
+      <ol class="scenario-list">
+        <li><div><strong>What types and base statistics does a Pokémon have, and how can I compare it with other Pokémon?</strong><p>The explorer will show consistent data fields and offer a details dialog so visitors can inspect Pokémon using the same information.</p></div></li>
+        <li><div><strong>How can I build a team with different types and useful roles instead of choosing only my favorites?</strong><p>The Team Guide page will provide examples and explain how type variety, offense, defense, and speed contribute to team balance.</p></div></li>
+        <li><div><strong>How can I find Pokémon of a particular type without browsing the entire catalog?</strong><p>Visitors will use name search and a type filter to narrow the catalog and see how many entries match.</p></div></li>
+        <li><div><strong>Can I save the Pokémon I like and return to them later?</strong><p>Favorite controls will store selections locally and make them available on the Team Guide page during future visits in the same browser.</p></div></li>
+      </ol>
+    </section>
+
+    <section id="color-scheme" aria-labelledby="colors-heading">
+      <span class="section-number">04 · Visual identity</span>
+      <h2 id="colors-heading">Color Scheme</h2>
+      <p>The palette combines a strong navy base, a red accent associated with Pokémon collecting, and light surfaces that keep the information easy to read. This plan uses the same palette intended for the final website.</p>
+      <table class="palette-table">
+        <caption>Selected colors and their uses</caption>
+        <thead><tr><th scope="col">Color</th><th scope="col">Hex Value</th><th scope="col">Where It Will Be Used</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="swatch swatch-navy" aria-hidden="true"></span>Navy</th><td><code>#16324F</code></td><td>Header and footer backgrounds, headings, body text, navigation, and borders.</td></tr>
+          <tr><th scope="row"><span class="swatch swatch-red" aria-hidden="true"></span>Deep Red</th><td><code>#B4232B</code></td><td>Links, section numbers, focus indicators, logo accents, and primary action buttons.</td></tr>
+          <tr><th scope="row"><span class="swatch swatch-cream" aria-hidden="true"></span>Warm Cream</th><td><code>#FFF8EF</code></td><td>Page background, feature cards, callouts, and alternate table rows.</td></tr>
+          <tr><th scope="row"><span class="swatch swatch-white" aria-hidden="true"></span>White</th><td><code>#FFFFFF</code></td><td>Main content surfaces and text on navy headers or red buttons.</td></tr>
+        </tbody>
+      </table>
+      <p class="contrast-note"><strong>Contrast:</strong> Navy text on white is approximately 13.1:1; deep red text on white is 6.5:1; deep red text on cream is 6.2:1. These combinations exceed the 4.5:1 target for normal text. Links will also be underlined, and focus indicators will remain visible.</p>
+      <div class="callout"><p><strong>Wireframe convention:</strong> The required sketches use black (<code>#000000</code>) and white (<code>#FFFFFF</code>) to communicate structure. Black is reserved for those diagrams.</p></div>
+    </section>
+
+    <section id="typography" aria-labelledby="typography-heading">
+      <span class="section-number">05 · Type system</span>
+      <h2 id="typography-heading">Typography</h2>
+      <p>The website will use two system fonts. This combination provides a distinctive heading style and readable body text while avoiding additional font downloads.</p>
+      <div class="type-grid">
+        <article class="type-sample">
+          <h3 class="font-name">Georgia · Headings</h3>
+          <p class="heading-sample">Build a balanced team</p>
+          <p>Georgia will be used for the main page heading, section headings, and card titles. Bold headings will establish a clear hierarchy.</p>
+        </article>
+        <article class="type-sample">
+          <h3 class="font-name">Arial · Body &amp; interface</h3>
+          <p class="body-sample">Explore Pokémon types, compare their statistics, and save your favorites for your next team.</p>
+          <p>Arial will be used for paragraphs, navigation, buttons, form labels, tables, and statistics. Body text will start at 16 pixels with generous line spacing.</p>
+        </article>
+      </div>
+      <p style="margin-top: 1.2rem; margin-bottom: 0;">The CSS font stacks will be <code>Georgia, serif</code> and <code>Arial, sans-serif</code>. Headings will scale with the viewport, and visitors will be able to zoom without losing content.</p>
+    </section>
+
+    <section id="wireframes" aria-labelledby="wireframes-heading">
+      <span class="section-number">06 · Home page structure</span>
+      <h2 id="wireframes-heading">Wireframes</h2>
+      <p>These black-and-white raster sketches outline the home page's structure. Crossed boxes mark image areas; labeled rectangles identify content, navigation, and actions. The two views show how the same content adapts to different screen sizes.</p>
+
+      <h3>Small Viewport: Mobile</h3>
+      <p>At small widths, the logo and menu control appear at the top. The menu button expands the navigation links. Hero content, action links, featured Pokémon, and team tips follow a single-column flow with comfortable touch targets.</p>
+      <figure class="mobile-sketch">
+        <img src="data:image/png;base64,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" width="620" height="1760" loading="lazy" decoding="async" alt="Mobile home page sketch: logo and expandable menu, hero introduction with two action buttons and an image, stacked featured Pokémon cards, team tips, and footer.">
+        <figcaption><strong>Mobile home page:</strong> Vertical content order for viewports from 320 pixels wide. The menu sketch labels the links shown when expanded; additional featured cards and tips continue in the same column.</figcaption>
+      </figure>
+
+      <h3>Large Viewport: Desktop / Tablet</h3>
+      <p>At larger widths, the navigation links appear horizontally. The hero introduction and illustration sit side by side, followed by three featured Pokémon cards and a row of team tips. Tablet widths will reduce the number of columns as needed.</p>
+      <figure>
+        <img src="data:image/png;base64,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" width="1200" height="1450" loading="lazy" decoding="async" alt="Desktop home page sketch: logo and horizontal navigation, two-column hero with introduction and illustration, three featured Pokémon cards, three team tips, and a full-width footer.">
+        <figcaption><strong>Desktop home page:</strong> A centered layout with clear navigation, paired hero content, a three-column featured section, and a shared footer.</figcaption>
+      </figure>
+      <div class="callout"><p><strong>Responsive behavior:</strong> The final website will use CSS Grid and Flexbox, flexible image sizes, and a navigation breakpoint around 720 pixels. Layouts will be checked at 320, 375, 768, and 1440 pixels to prevent horizontal scrolling.</p></div>
+    </section>
+
+    <section id="quality" aria-labelledby="quality-heading">
+      <span class="section-number">Development reference</span>
+      <h2 id="quality-heading">Quality &amp; Sources</h2>
+      <p>During development, I will validate HTML, check accessibility and keyboard navigation, verify color contrast, and run Lighthouse in mobile and desktop modes. The final site will use semantic landmarks, labeled controls, meaningful alternative text, optimized images, and a target transfer size under 500 kB per page.</p>
+      <ul class="reference-list">
+        <li><a href="https://byui-cse.github.io/wdd231-ww-course/week05/project-siteplan.html">WDD 231 Individual Project Site Plan</a></li>
+        <li><a href="https://byui-cse.github.io/wdd231-ww-course/week06/project-description.html">WDD 231 Individual Website Project Description</a></li>
+        <li><a href="https://pokeapi.co/docs/v2">PokéAPI documentation: planned Pokémon data source</a></li>
+        <li><a href="https://validator.w3.org/">W3C Markup Validator</a>, <a href="https://wave.webaim.org/">WAVE accessibility evaluation</a>, <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>, and <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Alan Helaman Hernández Serrato · Pokémon Team Guide</p>
+      <p>WDD 231 · Educational fan project. Pokémon names and characters belong to their respective owners.</p>
+      <p><a href="#site-name">Back to site name</a></p>
+    </div>
+  </footer>
+</body>
+</html>

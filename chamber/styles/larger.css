@@ -180,3 +180,153 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+@media only screen and (min-width: 40.0625rem) and (max-width: 64rem) {
+  .city-facts {
+    grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 1.35fr);
+    align-items: center;
+    padding: 1.35rem;
+  }
+
+  .fact-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .places-heading {
+    grid-template-columns: minmax(0, 0.8fr) minmax(18rem, 1.2fr);
+    align-items: end;
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place2"
+      "place3 place3"
+      "place4 place5"
+      "place6 place6"
+      "place7 place8";
+    gap: 1.15rem;
+  }
+
+  .place-3,
+  .place-6 {
+    grid-template-columns: minmax(15rem, 0.9fr) minmax(0, 1.1fr);
+    grid-template-rows: auto auto 1fr auto auto;
+  }
+
+  .place-3 h2,
+  .place-6 h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .place-3 figure,
+  .place-6 figure {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .place-3 img,
+  .place-6 img {
+    height: 100%;
+  }
+
+  .place-3 address,
+  .place-6 address,
+  .place-3 .place-description,
+  .place-6 .place-description,
+  .place-3 .place-fact,
+  .place-6 .place-fact,
+  .place-3 .learn-more-button,
+  .place-6 .learn-more-button {
+    grid-column: 2;
+  }
+}
+
+@media only screen and (min-width: 64.0625rem) {
+  .city-facts {
+    grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .fact-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .places-heading {
+    grid-template-columns: minmax(0, 0.8fr) minmax(22rem, 1.2fr);
+    align-items: end;
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place1 place2"
+      "place3 place4 place2"
+      "place5 place6 place7"
+      "place8 place8 place7";
+    gap: 1.25rem;
+  }
+
+  .place-1,
+  .place-8 {
+    grid-template-columns: minmax(13rem, 0.95fr) minmax(0, 1.05fr);
+    grid-template-rows: auto auto 1fr auto auto;
+  }
+
+  .place-1 h2,
+  .place-8 h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .place-1 figure,
+  .place-8 figure {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .place-1 img,
+  .place-8 img {
+    height: 100%;
+  }
+
+  .place-1 address,
+  .place-8 address,
+  .place-1 .place-description,
+  .place-8 .place-description,
+  .place-1 .place-fact,
+  .place-8 .place-fact,
+  .place-1 .learn-more-button,
+  .place-8 .learn-more-button {
+    grid-column: 2;
+  }
+
+  .place-2 figure,
+  .place-7 figure {
+    min-height: 15rem;
+  }
+
+  .place-2 img,
+  .place-7 img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 40.0625rem) and (hover: hover) {
+  .place-card img {
+    transition: filter 220ms ease, transform 220ms ease;
+  }
+
+  .place-card figure:hover img {
+    filter: saturate(1.12) contrast(1.06);
+    transform: scale(1.045);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .place-card img {
+    transition: none;
+  }
+}

@@ -706,6 +706,194 @@ footer a {
   aspect-ratio: 18 / 10;
 }
 
+.discover-main {
+  overflow: clip;
+}
+
+.visit-panel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.95rem 1rem;
+  color: #ffffff;
+  background: #0d5a54;
+  border-left: 5px solid #f3c451;
+  border-radius: 0.65rem;
+  box-shadow: 0 8px 24px #081f3117;
+  font-weight: 750;
+}
+
+.visit-icon {
+  color: #f3c451;
+  font-size: 1.3rem;
+}
+
+.city-facts {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  padding: 1.15rem;
+  background: #ffffff;
+  border: 1px solid #d8e0e5;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 30px #081f3112;
+}
+
+.city-facts h2,
+.places-heading h2,
+.place-card h2 {
+  color: #081f31;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.15;
+}
+
+.city-facts h2,
+.places-heading h2 {
+  font-size: clamp(1.55rem, 7vw, 2.15rem);
+}
+
+.fact-list {
+  display: grid;
+  gap: 0.65rem;
+  list-style: none;
+}
+
+.fact-list li {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.75rem;
+  background: #eef4f4;
+  border-radius: 0.5rem;
+}
+
+.fact-list strong {
+  color: #0d5a54;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.fact-list span {
+  color: #43535f;
+  font-size: 0.83rem;
+}
+
+.places-heading {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
+}
+
+.places-heading > p {
+  max-width: 40rem;
+  color: #52616d;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "place1"
+    "place2"
+    "place3"
+    "place4"
+    "place5"
+    "place6"
+    "place7"
+    "place8";
+  gap: 1rem;
+}
+
+.place-1 { grid-area: place1; }
+.place-2 { grid-area: place2; }
+.place-3 { grid-area: place3; }
+.place-4 { grid-area: place4; }
+.place-5 { grid-area: place5; }
+.place-6 { grid-area: place6; }
+.place-7 { grid-area: place7; }
+.place-8 { grid-area: place8; }
+
+.place-card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto auto;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d8e0e5;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 30px #081f311a;
+}
+
+.place-card h2 {
+  padding: 1rem 1rem 0.8rem;
+  font-size: 1.35rem;
+}
+
+.place-card figure {
+  margin: 0;
+  overflow: hidden;
+  background: #dfe8ec;
+}
+
+.place-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place-card address,
+.place-description,
+.place-fact {
+  margin-inline: 1rem;
+}
+
+.place-card address {
+  margin-top: 0.9rem;
+  color: #0d5a54;
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.place-description,
+.place-fact {
+  margin-top: 0.7rem;
+  color: #43535f;
+}
+
+.place-fact {
+  padding: 0.75rem;
+  background: #eef4f4;
+  border-left: 3px solid #0d5a54;
+  border-radius: 0.35rem;
+  font-size: 0.88rem;
+}
+
+.place-fact[hidden] {
+  display: none;
+}
+
+.learn-more-button {
+  width: fit-content;
+  min-height: 2.75rem;
+  margin: 1rem;
+  padding: 0.65rem 1rem;
+  color: #ffffff;
+  background: #12324a;
+  border: 2px solid #12324a;
+  border-radius: 0.45rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.learn-more-button:hover {
+  color: #081f31;
+  background: #f3c451;
+  border-color: #f3c451;
+}
+
 .join-layout {
   display: grid;
   align-items: start;
